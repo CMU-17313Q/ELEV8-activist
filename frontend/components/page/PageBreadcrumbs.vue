@@ -112,7 +112,6 @@ if (
 } else if (groupRegex.test(url)) {
   pageType = "group";
 
-  // Extract group ID from the URL using match groups
   const match = url.match(groupRegex);
   const groupId = match ? match[4] : null;
 
@@ -123,7 +122,6 @@ if (
 } else if (eventRegex.test(url)) {
   pageType = "event";
 
-  // Extract event ID from the URL using match groups
   const match = url.match(eventRegex);
   const eventId = match ? match[3] : null;
 
